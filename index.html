@@ -39,9 +39,10 @@
 
         .typewriter {
             overflow: hidden;
-            border-right: 2px solid;
+            border-right: 4px solid;
             white-space: nowrap;
             animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+            font-weight: bold;
         }
 
         @keyframes typing {
@@ -133,8 +134,8 @@
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transform: translateY(-20px) rotateY(12deg) rotateX(8deg) rotateZ(3deg) scale(1.05);
+            box-shadow: 0 35px 70px rgba(0,0,0,0.25);
         }
 
         .project-image {
@@ -467,7 +468,7 @@
             </div>
             
             <h1 class="text-5xl md:text-7xl font-bold mb-4 typewriter gradient-text">James Dev</h1>
-            <p class="text-xl md:text-2xl mb-8 typewriter text-gray-600 dark:text-gray-300">Crafting Digital Experiences</p>
+            <p class="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300">Crafting Digital Experiences</p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
                 <a href="#work" onclick="scrollToSection('work')" class="btn-hover bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 text-center shadow-lg">
@@ -483,7 +484,7 @@
     <!-- About Section -->
     <section id="about" class="py-20 px-6">
         <div class="container mx-auto max-w-4xl">
-            <h2 class="text-4xl font-bold text-center mb-12 typewriter">About Me</h2>
+            <h2 class="text-4xl font-bold text-center mb-12"><span class="typewriter" style="display: inline-block; width: auto;">About Me</span></h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <video class="w-full rounded-lg shadow-lg" autoplay muted loop>
@@ -518,100 +519,100 @@
                 <span class="typewriter">Work</span>
             </h2>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Project Cards -->
-                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                    <div class="relative mb-4 h-40 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop" alt="School building" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                         <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop" alt="Students studying" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                     </div>
-                    <h3 class="font-bold mb-2">School Registration & Payment</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Complete school management system with code generation</p>
-                    <button onclick="window.open('https://chef-hub5.github.io/BFA/', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-all">
+                    <h3 class="text-3xl font-bold mb-6">School Registration & Payment</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Complete school management system with code generation</p>
+                    <button onclick="window.open('https://chef-hub5.github.io/BFA/', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
                         View Website
                     </button>
                 </div>
 
-                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                    <div class="relative mb-4 h-40 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop" alt="Supermarket aisles" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                         <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&h=300&fit=crop" alt="Shopping cart" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                     </div>
-                    <h3 class="font-bold mb-2">Supermarket Website</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Modern e-commerce platform for retail business</p>
-                    <button onclick="window.open('https://chef-hub5.github.io/BFA/', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-all">
+                    <h3 class="text-3xl font-bold mb-6">Supermarket Website</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Modern e-commerce platform for retail business</p>
+                    <button onclick="window.open('https://chef-hub5.github.io/BFA/', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
                         View Website
                     </button>
                 </div>
 
-                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                    <div class="relative mb-4 h-40 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=300&fit=crop" alt="Hospital exterior" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                         <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop" alt="Medical equipment" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                     </div>
-                    <h3 class="font-bold mb-2">Hospital Website</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Healthcare management and patient portal</p>
-                    <button onclick="window.open('https://chef-hub5.github.io/BFA/', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-all">
+                    <h3 class="text-3xl font-bold mb-6">Hospital Website</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Healthcare management and patient portal</p>
+                    <button onclick="window.open('https://chef-hub5.github.io/BFA/', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
                         View Website
                     </button>
                 </div>
 
-                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                    <div class="relative mb-4 h-40 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?w=400&h=300&fit=crop" alt="Pharmacy shelves" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                         <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop" alt="Medicine bottles" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                     </div>
-                    <h3 class="font-bold mb-2">Drug Store Website</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Online pharmacy with prescription management</p>
-                    <button onclick="window.open('https://chef-hub5.github.io/Drug-Store/#', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-all">
+                    <h3 class="text-3xl font-bold mb-6">Drug Store Website</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Online pharmacy with prescription management</p>
+                    <button onclick="window.open('https://chef-hub5.github.io/Drug-Store/#', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
                         View Website
                     </button>
                 </div>
 
-                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                    <div class="relative mb-4 h-40 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
-                        <img src="New folder/facial.jpg" alt="Spa treatment room" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
-                        <img src="New folder/deep.jpg" alt="Spa relaxation" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop" alt="Spa treatment room" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Spa relaxation" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                     </div>
-                    <h3 class="font-bold mb-2">Spa Website</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Luxury spa booking and wellness platform</p>
-                    <button onclick="window.open('https://chef-hub5.github.io/spa-/#', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-all">
+                    <h3 class="text-3xl font-bold mb-6">Spa Website</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Luxury spa booking and wellness platform</p>
+                    <button onclick="window.open('https://chef-hub5.github.io/spa-/#', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
                         View Website
                     </button>
                 </div>
 
-                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                    <div class="relative mb-4 h-40 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=400&h=300&fit=crop" alt="Camera equipment" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                         <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=400&h=300&fit=crop" alt="Photography studio" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                     </div>
-                    <h3 class="font-bold mb-2">Photography Website</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Professional photography portfolio and booking</p>
-                    <button onclick="window.open('https://chef-hub5.github.io/photo/#', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-all">
+                    <h3 class="text-3xl font-bold mb-6">Photography Website</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Professional photography portfolio and booking</p>
+                    <button onclick="window.open('https://chef-hub5.github.io/photo/#', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
                         View Website
                     </button>
                 </div>
 
-                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                    <div class="relative mb-4 h-40 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop" alt="Creative workspace" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                         <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400&h=300&fit=crop" alt="Design portfolio" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                     </div>
-                    <h3 class="font-bold mb-2">Portfolio Website</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Creative portfolio with interactive elements</p>
-                    <button onclick="window.open('https://chef-hub5.github.io/BFA/', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-all">
+                    <h3 class="text-3xl font-bold mb-6">Portfolio Website</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Creative portfolio with interactive elements</p>
+                    <button onclick="window.open('https://chef-hub5.github.io/BFA/', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
                         View Website
                     </button>
                 </div>
 
-                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-                    <div class="relative mb-4 h-40 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Custom development" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Code on screen" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
                     </div>
-                    <h3 class="font-bold mb-2">Custom Website</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Tailored solutions for unique business needs</p>
-                    <button onclick="window.open('https://chef-hub5.github.io/BFA/', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-all">
+                    <h3 class="text-3xl font-bold mb-6">Custom Website</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Tailored solutions for unique business needs</p>
+                    <button onclick="window.open('https://chef-hub5.github.io/BFA/', '_blank')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
                         View Website
                     </button>
                 </div>
@@ -619,7 +620,7 @@
 
             <div class="text-center mt-12">
                 <button onclick="openContactForm()" class="btn-hover bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 inline-block">
-                    <span class="typewriter">Start a Conversation</span>
+                    Start a Conversation
                 </button>
             </div>
         </div>
@@ -779,7 +780,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-6">
         <div class="container mx-auto max-w-4xl">
-            <h2 class="text-4xl font-bold text-center mb-12 typewriter">Get In Touch</h2>
+            <h2 class="text-4xl font-bold text-center mb-12"><span class="typewriter" style="display: inline-block; width: auto;">Get In Touch</span></h2>
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Contact Info -->
                 <div>
@@ -930,6 +931,11 @@
             <p class="text-gray-400">Building amazing web experiences, one line of code at a time.</p>
         </div>
     </footer>
+
+    <!-- Watermark -->
+    <div class="bg-gray-950 text-gray-500 py-4 text-center text-sm">
+        <p class="opacity-60">James Dev</p>
+    </div>
 
     <script>
         // Theme Toggle
@@ -1247,16 +1253,18 @@
             setTimeout(handleScrollAnimations, 100);
         });
 
-        // Enhanced project card interactions
+        // Enhanced project card interactions with rolling effect
         document.querySelectorAll('.project-card').forEach(card => {
             card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-10px) scale(1.02)';
-                card.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
+                card.style.transform = 'translateY(-20px) rotateY(12deg) rotateX(8deg) rotateZ(3deg) scale(1.05)';
+                card.style.boxShadow = '0 35px 70px rgba(0,0,0,0.25)';
+                card.style.transition = 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
             });
             
             card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0) scale(1)';
-                card.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+                card.style.transform = 'translateY(0) rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1)';
+                card.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+                card.style.transition = 'all 0.4s ease';
             });
         });
 
@@ -1291,5 +1299,5 @@
             }, 100);
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97a15e213722940d',t:'MTc1NzAyOTYwMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97ae167092898fda',t:'MTc1NzE2Mjk4MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
