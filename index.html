@@ -521,7 +521,43 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Project Cards -->
-                 
+                
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                        <img src="New folder/Beautiful Fendi bag. Good for outing and church. Classy. All leather bag.jpg" alt="Supermarket aisles" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <img src="New folder/Beautiful Fendi bag. Good for outing and church. Classy. All leather bag.jpg" alt="Shopping cart" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                    </div>
+                    <h3 class="text-3xl font-bold mb-6">flourishsen Website</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Modern e-commerce platform for Apparel and Accessories</p>
+                    <button onclick="window.open('https://flourishsen.com/')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
+                        View Website
+                    </button>
+                </div>
+
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                        <img src="New folder/XIAOMI REDMI A5.jpg" alt="Supermarket aisles" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <img src="New folder/XIAOMI REDMI A5.jpg" alt="Shopping cart" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                    </div>
+                    <h3 class="text-3xl font-bold mb-6">Kingbobbygadget Website</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Modern e-commerce platform for Gadgets</p>
+                    <button onclick="window.open('https://kingbobbygadgets.com/')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
+                        View Website
+                    </button>
+                </div>
+
+                <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
+                    <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                        <img src="New folder/music-room.jpg" alt="Supermarket aisles" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <img src="New folder/music-room.jpg" alt="Shopping cart" class="project-image absolute inset-0 w-full h-full object-cover opacity-0" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                    </div>
+                    <h3 class="text-3xl font-bold mb-6">De Beat Store Website</h3>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-10">Modern e-store platform for Beats</p>
+                    <button onclick="window.open('https://chef-hub5.github.io/Beat-Store2/')" class="view-website-btn w-full bg-blue-600 text-white py-4 rounded hover:bg-blue-700 transition-all text-xl">
+                        View Website
+                    </button>
+                </div>
+
                 <div class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-12">
                     <div class="relative mb-10 h-80 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=300&fit=crop" alt="Hospital exterior" class="project-image absolute inset-0 w-full h-full object-cover" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
@@ -655,13 +691,13 @@
                     <label class="block text-sm font-medium mb-2">Website Type</label>
                     <select id="websiteType" onchange="updatePrice()" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700" required>
                         <option value="">Select website type</option>
-                        <option value="school" data-price="800">School Registration & Payment - $800</option>
-                        <option value="supermarket" data-price="700">Supermarket Website - $700</option>
-                        <option value="hospital" data-price="900">Hospital Website - $900</option>
-                        <option value="drugstore" data-price="600">Drug Store Website - $600</option>
-                        <option value="spa" data-price="500">Spa Website - $500</option>
-                        <option value="photography" data-price="550">Photography Website - $550</option>
-                        <option value="portfolio" data-price="400">Portfolio Website - $400</option>
+                        <option value="school" data-price="800">School Registration & Payment</option>
+                        <option value="supermarket" data-price="700">Supermarket Website</option>
+                        <option value="hospital" data-price="900">Hospital Website</option>
+                        <option value="drugstore" data-price="600">Drug Store Website</option>
+                        <option value="spa" data-price="500">Spa Website</option>
+                        <option value="photography" data-price="550">Photography Website</option>
+                        <option value="portfolio" data-price="400">Portfolio Website</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
@@ -734,11 +770,11 @@
                     <div class="flex gap-2">
                         <select id="budgetSelect" onchange="handleBudgetChange()" class="flex-1 p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700" required>
                             <option value="">Select budget range</option>
-                            <option value="500-600">$500 - $600</option>
-                            <option value="600-700">$600 - $700</option>
-                            <option value="700-800">$700 - $800</option>
-                            <option value="800-900">$800 - $900</option>
-                            <option value="900-1000">$900 - $1000</option>
+                            <option value="200-400">$200 - $400</option>
+                            <option value="400-600">$400 - $600</option>
+                            <option value="600-800">$600 - $800</option>
+                            <option value="800-1000">$800 - $1000</option>
+                            <option value="1000-1200">$1000 - $1200</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
